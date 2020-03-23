@@ -1,0 +1,39 @@
+body{
+  background-image: url("https://www.weizmann.ca/wp-content/uploads/2019/01/compass_oded_ahronson_952x460px-952x450.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  background-color: black;
+  font-weight: bolder;
+}
+.moon-image{
+margin: 2rem;
+border-radius: 50%;
+height: 300px;
+}
+
+.card-img-top{
+margin-left:30%;
+height:100px;
+width:100px;
+}
+
+.moon-row{
+  color: rgb(55, 250, 7)
+}
+
+.buy-items{
+  text-align: center;
+
+}
+.card{
+border-radius: 15%;
+margin-left: 10px;
+margin-right: 10px;
+background-color: rgb(73, 94, 94);
+color: white
+}
+.col-12{
+  text-shadow:5px 5px 5px #020202;
+  
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!--My CSS Style Sheet-->
+  <title>Moon Miner</title>
+</head>
+
+<body background-image="https://www.flywallpaper.com/mypics/max/1/16111_stars-backgrounds.jpg">
+  <header class="container-fluid text-center">
+    <div class="row">
+      <div class="col-12">
+        <h1>Moon Miner</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        Mine Cheese From The Moon
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-5">
+          <h3>Click on the Moon to collect cheese</h3>
+        </div>
+        <div class="col-3">
+          <a>
+          
+            <img class="moon-image text-center" onclick="buttonClick()" 
+              src="https://image.freepik.com/free-vector/flat-background-shiny-moon_23-2147615766.jpg">
+          </a>
+        </div>
+        <div class="col-4 text-right">
+          <h2 class="inventory">
+            <h1>Cheese:<input type="text" id="inc" value="0"> 0 </input></h1><br>
+            Cheese Knives:0 <br>
+            Pick Axe: 0 <br>
+            Mice: 0 <br>
+            Rovers: 0 <br>
+          </h2>
+        </div>
+      </div>
+      <!--Main Row ends here-->
+      <div class="row moon-row">
+        <div class="col-12">
+          <h3 class="buy-items mb-3">
+            Buy Items to increase cheese production
+          </h3>
+        </div>
+      </div>
+      <!--Card row starts here-->
+      <div class="row moon-row text-center">
+        <div class="col-3 items">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2014/2014650.svg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">x1<br>
+                The cheese knife will increase cheese production by 1 each click<br>
+                Cost: 50
+</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3  items">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-06-512.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">x5<br>
+                The pick axe will increase cheese production by 5 each click<br>
+                Cost: 200
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 items">
+          <div class="card" onclick= "mouse()" style="width: 18rem;">
+            <img class="card-img-top" src="https://cdn.iconscout.com/icon/free/png-512/mice-1553179-1313945.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">x1<br>
+                The mice will increase cheese by 1 every 3 seconds<br>
+                Cost: 500
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 items">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://static.thenounproject.com/png/547826-200.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">x10<br>
+              The rover will increase cheese by 10 every 3 seconds<br>
+              Cost: 1000
+            </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!--My Javascript Page-->
+  <script src="app.js"></script>
+</body>
+
+</html>
