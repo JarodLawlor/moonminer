@@ -36,13 +36,13 @@
         <div class="col-3">
           <a>
           
-            <img class="moon-image text-center" onclick="buttonClick()" 
+            <img class="moon-image text-center" onclick="buttonClick()"
               src="https://image.freepik.com/free-vector/flat-background-shiny-moon_23-2147615766.jpg">
           </a>
         </div>
         <div class="col-4 text-right">
           <h2 class="inventory">
-            <h1>Cheese:<input type="text" id="inc" value="0"> 0 </input></h1><br>
+            <h1>Cheese:<input id="inc" value="0"></input></h1><br>
             Cheese Knives:0 <br>
             Pick Axe: 0 <br>
             Mice: 0 <br>
@@ -61,10 +61,10 @@
       <!--Card row starts here-->
       <div class="row moon-row text-center">
         <div class="col-3 items">
-          <div class="card" style="width: 18rem;">
+          <div class="card"style="width: 18rem;" onclick="buyCheeseKnife()">
             <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2014/2014650.svg" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">x1<br>
+              <p class="card-text" id="cheese-knife-details">x1<br>
                 The cheese knife will increase cheese production by 1 each click<br>
                 Cost: 50
 </p>
@@ -72,6 +72,7 @@
           </div>
         </div>
         <div class="col-3  items">
+          <!-- FIXME make these clickable -->
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-06-512.png" alt="Card image cap">
             <div class="card-body">
@@ -83,7 +84,7 @@
           </div>
         </div>
         <div class="col-3 items">
-          <div class="card" onclick= "mouse()" style="width: 18rem;">
+          <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="https://cdn.iconscout.com/icon/free/png-512/mice-1553179-1313945.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text">x1<br>
