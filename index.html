@@ -36,7 +36,7 @@
         <div class="col-3">
           <a>
           
-            <img class="moon-image text-center" onclick="buttonClick()"
+            <img id= "total" class="moon-image text-center" onclick="moonClick()"
               src="https://image.freepik.com/free-vector/flat-background-shiny-moon_23-2147615766.jpg">
           </a>
         </div>
@@ -73,10 +73,10 @@
         </div>
         <div class="col-3  items">
           <!-- FIXME make these clickable -->
-          <div class="card" style="width: 18rem;">
+          <div class="card" onclick="buyPickAxe()" id="axe-card" style="width: 18rem;">
             <img class="card-img-top" src="https://cdn1.iconfinder.com/data/icons/tools-65/100/tool-06-512.png" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">x5<br>
+              <p class="card-text" >x5<br>
                 The pick axe will increase cheese production by 5 each click<br>
                 Cost: 200
               </p>
@@ -84,10 +84,10 @@
           </div>
         </div>
         <div class="col-3 items">
-          <div class="card" style="width: 18rem;">
+          <div class="card" id= "mouse-card" style="width: 18rem;" onclick="buyMouse()">
             <img class="card-img-top" src="https://cdn.iconscout.com/icon/free/png-512/mice-1553179-1313945.png" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">x1<br>
+              <p class="card-text" id ="mouse-card">x1<br>
                 The mice will increase cheese by 1 every 3 seconds<br>
                 Cost: 500
               </p>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="col-3 items">
-          <div class="card" style="width: 18rem;">
+          <div class="card" id="rover-card" style="width: 18rem;" onclick="buyRover()">
             <img class="card-img-top" src="https://static.thenounproject.com/png/547826-200.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text">x10<br>

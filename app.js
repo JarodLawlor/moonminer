@@ -1,6 +1,4 @@
 
-
-
 let upgrades = [
   {
     name: "knife",
@@ -32,10 +30,10 @@ let idleUpgrades = [{
 }]
 
 var cheese = 0;
-// TODO use appropriate names for your functions
-function buttonClick() {
+
+function moonClick() {
   let total = 1
-  //FIXME iterate through your upgrades and build a total 
+  //iterate through your upgrades and build a total // done
   upgrades.forEach(item => total += item.inventory * item.increment)
   cheese += total
   updateCheeseCount()
@@ -44,23 +42,75 @@ function buttonClick() {
 function buyCheeseKnife() {
   let knife = upgrades.find(item => item.name == "knife")
   if (cheese < knife.cost) {
-    return // REVIEW stop the function not enough cheese
+    return
+    // REVIEW stop the function not enough cheese
   }
+}
+function buyPickAxe() {
+  let axe = upgrades.find(item => item.name == "axe")
+  if (cheese < axe.cost) {
+    return
+  }
+}
 
-  knife.inventory += 1
-  knife.cost *= 1.10
-  cheese -= knife.cost
+function buyMouse() {
+  let mouse = idleUpgrades.find(item => item.name == "mouse")
+  if (cheese < mouse.cost) {
+    return
+  }
+}
+function buyRover() {
+  let rover = idleUpgrades.find(item => item.name == "rover")
+  if (cheese < rover.cost) {
+    return
+    console.log()
+  }
+}
 
-  document.getElementById('cheese-knife-details').innerHTML = `
+knife.inventory += 1
+knife.cost *= 2
+cheese -= knife.cost
+axe.inventory += 1
+axe.cost *= 2
+cheese -= axe.cost
+
+mouse.inventory += 1
+mouse.cost *= 2
+cheese -= mouse.cost
+
+rover.inventory += 1
+rover.cost *= 2
+cheese -= rover.cost
+
+document.getElementById('cheese-knife-details').innerHTML = `
   x1<br>
   The cheese knife will increase cheese production by ${knife.inventory * knife.increment} each click<br>
   Cost: ${knife.cost}
   `
-  updateCheeseCount()
-}
+updateCheeseCount()
 
-function updateCheeseCount(){
+
+document.getElementById('axe-card').innerHTML = `x5<br>
+The pick axe will increase cheese production by ${axe.inventory * axe.increment} each click<br>
+Cost: ${axe.cost}`
+
+updateCheeseCount()
+
+document.getElementById('mouse-card').innerHTML = `x1<br>
+The mice will increase cheese by ${mouse.inventory * mouse.increment} every 3 seconds<br>
+Cost: ${mouse.cost}`
+
+
+document.getElementById("rover-card").innertHTML = `x1<br>
+The mice will increase cheese by ${rover.inventory * rover.increment} every 3 seconds<br>
+Cost: ${rover.cost}`
+
+
+
+function updateCheeseCount() {
   document.getElementById('inc').value = cheese;
 }
 
 //FIXME ME Add Idle Intervals
+
+document.getElementById()
